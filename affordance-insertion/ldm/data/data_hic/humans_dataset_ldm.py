@@ -189,6 +189,7 @@ class HumansDatasetSubset(Dataset):
         boxes_db_path = str(path.joinpath("masks_db"))
         self.boxes_db = Database(boxes_db_path, readahead=False, lock=False)
 
+        #change1
         #ipdb.set_trace()
         # Load the JSON file
         with open('train_clip_to_caption.json', 'r') as file:
